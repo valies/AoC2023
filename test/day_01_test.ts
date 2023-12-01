@@ -21,7 +21,7 @@ Deno.test("Day 01 part 2 example", () => {
 
 Deno.test("Day 01 part 2 actual", () => {
   assertEquals(
-    resultOfPart2("./test/data/day_01_input.txt"), 55093,
+    resultOfPart2("./test/data/day_01_input.txt"),
+    55093,
   );
 });
-

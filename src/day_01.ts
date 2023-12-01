@@ -11,11 +11,13 @@ export const resultOfPart1 = (source: string): number => {
     let first = "";
     let second = "";
     const d = data.map((char) => {
-      if (!Number.isNaN(Number(char)) && first == "") {
-        first = char;
-      }
-      if (!Number.isNaN(Number(char)) && first != "") {
-        second = char;
+      if (!Number.isNaN(Number(char))) {
+        if (first === "") {
+          first = char;
+        }
+        if (first !== "") {
+          second = char;
+        }
       }
       return first + second;
     });
