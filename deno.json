@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "roar": "deno run --check --allow-read ./main.ts",
+    "arlo": "deno test --check --allow-read"
+  }
+}
