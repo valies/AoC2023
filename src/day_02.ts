@@ -7,8 +7,7 @@ export const resultOfPart1 = (source: string): number => {
   let result = 0;
   games.forEach((game) => {
     const id = Number(game.split(":")[0]);
-    const counts = game.split(":");
-    const rgb = getRgbResult(counts);
+    const rgb = getRgbResult(game.split(":"));
     if (rgb["red"] <= 12 && rgb["green"] <= 13 && rgb["blue"] <= 14) {
       result += id;
     }
@@ -22,8 +21,7 @@ export const resultOfPart2 = (source: string): number => {
   );
   let result = 0;
   games.forEach((game) => {
-    const counts = game.split(":");
-    const rgb = getRgbResult(counts);
+    const rgb = getRgbResult(game.split(":"));
     result += rgb["red"] * rgb["green"] * rgb["blue"];
   });
   return result;
