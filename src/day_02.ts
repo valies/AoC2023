@@ -8,20 +8,8 @@ export const resultOfPart1 = (source: string): number => {
   games.forEach((game) => {
     const id = Number(game.split(":")[0]);
     const counts = game.split(":");
-    let r = 0;
-    let g = 0;
-    let b = 0;
-    counts.forEach((count) => {
-      const value = Number(count.split(" ")[1]);
-      if (count.includes("red")) {
-        if (value > r) r = value;
-      } else if (count.includes("green")) {
-        if (value > g) g = value;
-      } else if (count.includes("blue")) {
-        if (value > b) b = value;
-      }
-    });
-    if (r <= 12 && g <= 13 && b <= 14) {
+    const rgb = getRgbResult(counts);
+    if (rgb["red"] <= 12 && rgb["green"] <= 13 && rgb["blue"] <= 14) {
       result += id;
     }
   });
@@ -35,20 +23,23 @@ export const resultOfPart2 = (source: string): number => {
   let result = 0;
   games.forEach((game) => {
     const counts = game.split(":");
-    let r = 0;
-    let g = 0;
-    let b = 0;
-    counts.forEach((count) => {
-      const value = Number(count.split(" ")[1]);
-      if (count.includes("red")) {
-        if (value > r) r = value;
-      } else if (count.includes("green")) {
-        if (value > g) g = value;
-      } else if (count.includes("blue")) {
-        if (value > b) b = value;
-      }
-    });
-    result += r * g * b;
+    const rgb = getRgbResult(counts);
+    result += rgb["red"] * rgb["green"] * rgb["blue"];
   });
   return result;
+};
+
+const getRgbResult = (counts: string[]): { [key: string]: number } => {
+  const rgb = { "red": 0, "green": 0, "blue": 0 };
+  counts.forEach((count) => {
+    const value = Number(count.split(" ")[1]);
+    if (count.includes("red") && value > rgb["red"]) {
+      rgb["red"] = value;
+    } else if (count.includes("green") && value > rgb["green"]) {
+      rgb["green"] = value;
+    } else if (count.includes("blue") && value > rgb["blue"]) {
+      rgb["blue"] = value;
+    }
+  });
+  return rgb;
 };
