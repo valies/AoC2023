@@ -34,7 +34,6 @@ export const resultOfPart2 = (source: string): number => {
   );
   let result = 0;
   games.forEach((game) => {
-    const id = Number(game.split(":")[0]);
     const counts = game.split(":");
     let r = 0;
     let g = 0;
