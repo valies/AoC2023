@@ -70,6 +70,6 @@ console.log(
 console.log(
   prettyPrint(
     "Day 04 part 2",
-    resultOfPart2FromDay4("./test/data/day_04_input.txt"),
+    resultOfPart2FromDay4("./test/data/day_04_input_example.txt"),
   ),
 );
