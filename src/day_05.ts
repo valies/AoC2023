@@ -49,7 +49,6 @@ export const resultOfPart2 = (source: string): number => {
           seedCollection,
         );
         result = Math.min(result, currentSmallestLocation);
-        console.log("Result: " + result);
         seedCollection = [];
       }
     }
