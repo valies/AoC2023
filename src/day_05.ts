@@ -150,5 +150,6 @@ const smallestLocation = (
       result = source;
     }
   });
+
   return result;
 };

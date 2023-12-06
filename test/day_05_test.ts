@@ -22,7 +22,7 @@ Deno.test("Day 05 part 2 example", () => {
   );
 });
 
-//takes about 8 mins -_- and result is wrong :'(
+//takes about 8 mins O_o and result is wrong :'(
 /*Deno.test("Day 05 part 2 actual", () => {
   assertEquals(
     resultOfPart2("./test/data/day_05_input.txt"),
