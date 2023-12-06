@@ -1,5 +1,9 @@
 import { assertEquals } from "https://deno.land/std@0.207.0/assert/mod.ts";
-import { resultOfPart1, resultOfPart1Reworked, resultOfPart2 } from "../src/day_04.ts";
+import {
+  resultOfPart1,
+  resultOfPart1Reworked,
+  resultOfPart2,
+} from "../src/day_04.ts";
 
 Deno.test("Day 04 part 1 example", () => {
   assertEquals(

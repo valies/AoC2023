@@ -32,7 +32,7 @@ export const resultOfPart1Reworked = (source: string): number => {
     if (card.wins < 2) {
       result += 1;
     } else {
-      result += Math.pow(2, card.wins-1) ;
+      result += Math.pow(2, card.wins - 1);
     }
   });
   return result;

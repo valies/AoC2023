@@ -7,6 +7,8 @@ import { resultOfPart1 as resultOfPart1FromDay3 } from "./src/day_03.ts";
 import { resultOfPart2 as resultOfPart2FromDay3 } from "./src/day_03.ts";
 import { resultOfPart1 as resultOfPart1FromDay4 } from "./src/day_04.ts";
 import { resultOfPart2 as resultOfPart2FromDay4 } from "./src/day_04.ts";
+import { resultOfPart1 as resultOfPart1FromDay5 } from "./src/day_05.ts";
+import { resultOfPart2 as resultOfPart2FromDay5 } from "./src/day_05.ts";
 
 console.log(`
                __
@@ -71,5 +73,19 @@ console.log(
   prettyPrint(
     "Day 04 part 2",
     resultOfPart2FromDay4("./test/data/day_04_input.txt"),
+  ),
+);
+
+console.log(
+  prettyPrint(
+    "Day 05 part 1",
+    resultOfPart1FromDay5("./test/data/day_05_input.txt"),
+  ),
+);
+
+console.log(
+  prettyPrint(
+    "Day 05 part 2",
+    resultOfPart2FromDay5("./test/data/day_05_input_example.txt"),
   ),
 );
