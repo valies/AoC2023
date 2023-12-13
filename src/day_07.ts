@@ -189,7 +189,9 @@ export const resultOfPart2 = (source: string): number => {
         ranking: 0,
       });
     } else if (
-      chars.filter(c => c.char !== "J").some((c) => c.count + jokerCount === 4) || jokerCount === 4
+      chars.filter((c) => c.char !== "J").some((c) =>
+        c.count + jokerCount === 4
+      ) || jokerCount === 4
     ) {
       ranking.push({
         hand: handAndBid[0],
@@ -198,8 +200,9 @@ export const resultOfPart2 = (source: string): number => {
         ranking: 0,
       });
     } else if (
-      (jokerCount === 0 && chars.some((c) => c.count === 3) && chars.some((c) => c.count === 2)) || 
-      (chars.filter(c => c.count === 2).length === 2 && jokerCount === 1)
+      (jokerCount === 0 && chars.some((c) => c.count === 3) &&
+        chars.some((c) => c.count === 2)) ||
+      (chars.filter((c) => c.count === 2).length === 2 && jokerCount === 1)
     ) {
       ranking.push({
         hand: handAndBid[0],
@@ -208,8 +211,14 @@ export const resultOfPart2 = (source: string): number => {
         ranking: 0,
       });
     } else if (
-      (chars.filter(c => c.char !== "J").some((c) => c.count + jokerCount === 3) || jokerCount === 3) && 
-      (jokerCount === 0 || (jokerCount === 1 && chars.filter(c => c.count === 1 && c.char !== "J").length === 2) || (jokerCount === 2 && chars.filter(c => c.count === 1 && c.char !== "j").length === 3))
+      (chars.filter((c) => c.char !== "J").some((c) =>
+        c.count + jokerCount === 3
+      ) || jokerCount === 3) &&
+      (jokerCount === 0 || (jokerCount === 1 && chars.filter((c) =>
+            c.count === 1 && c.char !== "J"
+          ).length === 2) ||
+        (jokerCount === 2 &&
+          chars.filter((c) => c.count === 1 && c.char !== "j").length === 3))
     ) {
       ranking.push({
         hand: handAndBid[0],
@@ -243,7 +252,9 @@ export const resultOfPart2 = (source: string): number => {
         ranking: 0,
       });
     } else {
-      console.log("Oh no this one is skipped, you made a mistake: " + handAndBid[0]);
+      console.log(
+        "Oh no this one is skipped, you made a mistake: " + handAndBid[0],
+      );
     }
   });
 
