@@ -14,6 +14,10 @@ import { resultOfPart1 as resultOfPart1FromDay7 } from "./src/day_07.ts";
 import { resultOfPart2 as resultOfPart2FromDay7 } from "./src/day_07.ts";
 import { resultOfPart1 as resultOfPart1FromDay8 } from "./src/day_08.ts";
 import { resultOfPart2 as resultOfPart2FromDay8 } from "./src/day_08.ts";
+import { resultOfPart1 as resultOfPart1FromDay9 } from "./src/day_09.ts";
+import { resultOfPart2 as resultOfPart2FromDay9 } from "./src/day_09.ts";
+import { resultOfPart1 as resultOfPart1FromDay11 } from "./src/day_11.ts";
+import { resultOfPart2 as resultOfPart2FromDay11 } from "./src/day_11.ts";
 
 console.log(`
                __
@@ -127,5 +131,33 @@ console.log(
   prettyPrint(
     "Day 08 part 2",
     resultOfPart2FromDay8("./test/data/day_08_input.txt"),
+  ),
+);
+
+console.log(
+  prettyPrint(
+    "Day 09 part 1",
+    resultOfPart1FromDay9("./test/data/day_09_input.txt"),
+  ),
+);
+
+console.log(
+  prettyPrint(
+    "Day 09 part 2",
+    resultOfPart2FromDay9("./test/data/day_09_input.txt"),
+  ),
+);
+
+console.log(
+  prettyPrint(
+    "Day 11 part 1",
+    resultOfPart1FromDay11("./test/data/day_11_input.txt"),
+  ),
+);
+
+console.log(
+  prettyPrint(
+    "Day 11 part 2",
+    resultOfPart2FromDay11("./test/data/day_11_input.txt", 1000000 - 1),
   ),
 );
