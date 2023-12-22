@@ -18,6 +18,7 @@ import { resultOfPart1 as resultOfPart1FromDay9 } from "./src/day_09.ts";
 import { resultOfPart2 as resultOfPart2FromDay9 } from "./src/day_09.ts";
 import { resultOfPart1 as resultOfPart1FromDay11 } from "./src/day_11.ts";
 import { resultOfPart2 as resultOfPart2FromDay11 } from "./src/day_11.ts";
+import { resultOfPart1 as resultOfPart1FromDay12 } from "./src/day_12.ts";
 
 console.log(`
                __
@@ -159,5 +160,12 @@ console.log(
   prettyPrint(
     "Day 11 part 2",
     resultOfPart2FromDay11("./test/data/day_11_input.txt", 1000000 - 1),
+  ),
+);
+
+console.log(
+  prettyPrint(
+    "Day 12 part 1",
+    resultOfPart1FromDay12("./test/data/day_12_input_example.txt"),
   ),
 );

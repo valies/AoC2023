@@ -53,3 +53,11 @@ Linter
 ```bash
 deno lint
 ```
+
+Import library
+
+"deno check {filePath}", like so:
+
+```bash
+deno check ./src/day_12.ts
+```

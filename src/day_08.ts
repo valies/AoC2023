@@ -1,5 +1,7 @@
 import { parseFileToArrayOfStrings } from "./support/helper.ts";
 
+//SPOILER at bottom of the page
+
 interface Map {
   node: string;
   L: string;
@@ -88,3 +90,14 @@ const gcd = (a: number, b: number): number => {
   if (b == 0) return a;
   return gcd(b, a % b);
 };
+
+/* SPOILER
+ |
+ |
+ |
+ |
+ |
+ |
+\ /
+ `
+Algorithm: Least Common Multiple*/

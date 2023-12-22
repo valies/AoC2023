@@ -1,5 +1,7 @@
 import { parseFileToArrayOfStrings } from "./support/helper.ts";
 
+//SPOILER at bottom of the page
+
 export const resultOfPart1 = (source: string): number => {
   const universe = parseFileToArrayOfStrings(source).map((s) => {
     return s.split("").map((n) => n);
@@ -131,3 +133,14 @@ const drawShortestPathPerPair = (
   }
   return shortestPathPerPair;
 };
+
+/* SPOILER
+ |
+ |
+ |
+ |
+ |
+ |
+\ /
+ `
+Algorithm: Manhattan Distance*/

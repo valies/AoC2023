@@ -86,6 +86,7 @@
     "https://deno.land/std@0.208.0/io/read_string_delim.ts": "620a6b4a2e82a7ede54b550e21233b461d14faa2f37b875280185c75b7956964",
     "https://deno.land/std@0.208.0/io/slice_long_to_bytes.ts": "bb5aa0d705422b05cfe7c1d4b55716f3c143a30e3014212ee89c4cd23e146467",
     "https://deno.land/std@0.208.0/io/string_reader.ts": "3751befe5e8b23fd7a3f87f96d771b61c92e4f52e8e046dc5834007869f84fa4",
-    "https://deno.land/std@0.208.0/io/string_writer.ts": "3af97bb28947bc60f5674c2e45a89b5f29c1c7c969c2f2452c8f89ab2f37ef4c"
+    "https://deno.land/std@0.208.0/io/string_writer.ts": "3af97bb28947bc60f5674c2e45a89b5f29c1c7c969c2f2452c8f89ab2f37ef4c",
+    "https://deno.land/x/memoizy@1.0.0/mod.ts": "8b421c57a2c9bcf60f0d845aa46d19b09de838953c9d440d9abbc8e3cabb791b"
   }
 }
